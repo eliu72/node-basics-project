@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="game.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div>
+        <form>
+            <label for="player1">Player 1:</label>
+            <input type="text" id="player1" name="player1"><br><br>
+
+            <label for="player2">Player 2:</label>
+            <input type="text" id="player2" name="player2"><br><br>
+
+            <input type="button" value="Start Game" onclick="startGame()">
+        </form>
+    </div>
+
+    <div>
+        <p id="playerTurn"></p>
+        <p id="message"></p>
+    </div>
+
+    <div id="gameboard">
+        <table style="background-color: #D6EEEE;">
+            <tr data-col="0">
+                <td data-col="0" data-row="0"></td>
+                <td data-col="0" data-row="1"></td>
+                <td data-col="0" data-row="2"></td>
+            </tr>
+            <tr data-col="1">
+                <td data-col="1" data-row="0"></td>
+                <td data-col="1" data-row="1"></td>
+                <td data-col="1" data-row="2"></td>
+            </tr>
+            <tr data-col="2">
+                <td data-col="2" data-row="0"></td>
+                <td data-col="2" data-row="1"></td>
+                <td data-col="2" data-row="2"></td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <button onclick="startGame()">Restart Game</button>
+    <script>
+        addEventListeners();
+    </script>
+</body>
+</html>

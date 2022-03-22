@@ -1,0 +1,24 @@
+{
+  "name": "js-testing-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliu72/js-testing-practice.git"
+  },
+  "author": "Elaine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliu72/js-testing-practice/issues"
+  },
+  "homepage": "https://github.com/eliu72/js-testing-practice#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "eslint": "^8.11.0",
+    "jest": "^27.5.1"
+  }
+}

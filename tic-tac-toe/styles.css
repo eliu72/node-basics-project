@@ -1,0 +1,12 @@
+tr {
+    border: solid;
+    width: 100px;
+    height: 100px;
+}
+
+td {
+    border: solid;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}

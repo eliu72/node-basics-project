@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+  <script src="rock_paper_scissors.js"></script>
+</head>
+<body>
+  <div id="container">
+    <button value="rock">Rock</button>
+    <button value="paper">Paper</button>
+    <button value="scissors">Scissors</button>
+  </div>
+  <div id="result">
+    <p id="resultMsg">Play a round of 'Rock Paper Scissors' against the computer by clicking a button!</p>
+  </div>
+
+  <script>
+    let userScore = 0, computerScore = 0;
+    let buttons = document.querySelectorAll('button');
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        let results = playRound(button.value, computerPlay(), document.querySelector('#resultMsg'));
+        userScore += results[0];
+        computerScore += results[1];
+        updateScore(userScore, computerScore, winningScore=5, document.querySelector('#resultMsg'));
+      });
+    });
+  </script>
+</body>
+</html>
